@@ -1,5 +1,5 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Microsoft Agent Framework—Design, Orchestrate, and Scale Agentic AI
+This is the repository for the LinkedIn Learning course `Microsoft Agent Framework—Design, Orchestrate, and Scale Agentic AI`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![lil-thumbnail-url]
 
