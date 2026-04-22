@@ -7,22 +7,46 @@ This is the repository for the LinkedIn Learning course `Microsoft Agent Framewo
 
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+
+This repository contains branches for the videos in this course that involve writing code — not every video has a branch, only the ones where you are actively building something.
+
+You can use the branch pop-up menu in GitHub to switch to a specific branch and see the code at that stage, or append `/tree/BRANCH_NAME` to the repository URL to navigate directly to a branch.
+
+> **Recommended: Fork this repository first!**
+> If you want to follow along and make your own changes, fork this repository to your own GitHub account before cloning it. That way you have your own copy to experiment with freely, without affecting the original course files.
 
 ## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+Branches follow the naming convention `CHAPTER#_VIDEO#`. For example, `02_03` corresponds to Chapter 2, Video 3.
 
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
+Each branch represents the **starting state** of the code for that video — what you need in place *before* the video begins. The ending state of a video is simply the starting state of the next video's branch, so no separate end branch is needed for most videos.
+
+Some videos have both a `b` (beginning) and an `e` (end) branch when the end state is not simply the start of the next video. The `main` branch holds the final complete state of the course.
+
+| Branch | Chapter | Video | Description |
+|--------|---------|-------|-------------|
+| `01_02` | 1 | 2 | Building your first Agent |
+| `01_03` | 1 | 3 | Giving Memory to Your Agent |
+| `01_04` | 1 | 4 | Adding Power: Tools |
+| `01_05b` | 1 | 5 | Going MCP — beginning state |
+| `01_05e` | 1 | 5 | Going MCP — end state |
+| `02_03` | 2 | 3 | Design Team Skeleton |
+| `02_04` | 2 | 4 | Product Manager Agent |
+| `02_05` | 2 | 5 | Architect Agent |
+| `02_06` | 2 | 6 | QA Engineer Agent |
+| `02_07b` | 2 | 7 | Feature Card Agent — beginning state |
+| `02_07e` | 2 | 7 | Feature Card Agent — end state (complete course) |
+
+When switching branches after making local changes, you may see an error like this:
+
+    error: Your local changes to the following files would be overwritten by checkout: [files]
     Please commit your changes or stash them before you switch branches.
     Aborting
 
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+To resolve this:
+
+    git add .
+    git commit -m "my changes"
 
 ## Installing
 1. To use these exercise files, you must have the following installed:
