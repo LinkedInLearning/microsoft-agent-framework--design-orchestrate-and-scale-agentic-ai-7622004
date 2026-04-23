@@ -53,6 +53,18 @@ public static class AgentInstructions
         - Always output the full current feature specification so memory can capture it.
         """;
 
+    public const string WithTools = """
+
+        You have access to tools. When you receive a feature request:
+        1. First, refine the raw idea into a well-formed user story and full Feature Specification.
+        2. Then call StoryHealthCheckTool on the refined user story to validate its quality (score 0-100).
+        3. Then call FeatureMetadataTool on the feature description to get component, priority, and complexity suggestions.
+        4. Incorporate the tool results into your final specification.
+
+        Show the tool analysis after the specification so the user sees the quality validation.
+        Only run the tools once the feature is fully formed — not on rough initial input.
+        """;
+
     /// <summary>Compose full instructions with optional additions.</summary>
     public static string Compose(params string[] additions)
         => string.Concat(CoreInstructions, string.Concat(additions));
