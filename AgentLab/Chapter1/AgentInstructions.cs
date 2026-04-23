@@ -39,4 +39,22 @@ public static class AgentInstructions
     And always put the full feature specification between the <<<FEATURE_SPEC>>> and END_FEATURE_SPEC>>> delimiters — even if it's a rough draft or work-in-progress. This is CRITICAL for memory capture and downstream processing.
     """;
 
+    /// <summary>Addition for Sample 02+ when project context memory is available.</summary>
+    public const string WithProjectContext = """
+        Important — Project Memory:
+        - You have persistent memory. Project facts (product name, tech stack, feature spec)
+        are accumulated across turns. Use them to ground every response.
+        - If key project context is missing (see the "Missing context" section), proactively
+        ask 1-2 targeted questions to fill those gaps. Weave the questions naturally into
+        your response — for example: "Before I flesh out the acceptance criteria, what tech
+        stack are you building on?" Do NOT wait for the user to volunteer this information.
+        - If a Feature Specification is present, treat it as work-in-progress.
+        Refine and improve it with each turn rather than starting from scratch.
+        - Always output the full current feature specification so memory can capture it.
+        """;
+
+    /// <summary>Compose full instructions with optional additions.</summary>
+    public static string Compose(params string[] additions)
+        => string.Concat(CoreInstructions, string.Concat(additions));
+    
 }

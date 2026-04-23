@@ -15,7 +15,7 @@ while (true)
     Console.WriteLine("  Chapter 1: Feature Planning Copilot");
     Console.WriteLine("  ─────────────────────────────────────");
     Console.WriteLine("  1. Sample 01 - Feature Planning Copilot (Basic Agent + DevUI)");
-    //Console.WriteLine("  2. Sample 02 - Feature Planning with Memory");
+    Console.WriteLine("  2. Sample 02 - Feature Planning with Memory");
     //Console.WriteLine("  3. Sample 03 - Feature Planning with Tools");
     //Console.WriteLine("  4. Sample 04 - Feature Planning with MCP (GitHub)");
     //Console.WriteLine();
@@ -48,9 +48,9 @@ while (true)
             case "1":   // uncommented in 01_02
               await FeaturePlanningCopilot.Run();
               break;
-            //case "2":
-            //    await FeaturePlanningWithMemory.RunAsync();
-            //    break;
+            case "2":
+               await FeaturePlanningWithMemory.RunAsync();
+               break;
             //case "3":
             //    await FeaturePlanningWithTools.RunAsync();
             //    break;
