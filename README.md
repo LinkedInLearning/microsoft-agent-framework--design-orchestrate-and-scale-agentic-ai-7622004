@@ -49,20 +49,24 @@ To resolve this:
     git commit -m "my changes"
 
 ## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+
+All installation requirements are covered step by step in the course in **Chapter 0, Video 02 — What you should know**. The following tools and accounts are needed:
+
+- .NET 10 SDK
+- Visual Studio Code
+- Azure account + Microsoft Foundry
+- Node.js LTS
+- GitHub account + Personal Access Token
+- This repository (cloned or forked)
 
 ## Instructor
 
-Instructor name
+**José Luis Latorre**
+*Community Lead + Agentic & Software Architect @ Swiss Life | Microsoft AI MVP | AgentEval creator | LinkedIn Learning Instructor*
 
-Instructor description
+José works as Dev Community Lead and Agentic & Software Architect at Swiss Life AG, with over 20 years in software engineering spanning the full spectrum from enterprise systems to modern cloud-native AI. He focuses on two things: helping developers ship better software through DevEx, standards, and practices, and building AI systems that still behave when they hit production. His specialties are Generative AI, Agentic AI engineering, and Azure cloud solutions—especially where the "cool demo" meets real constraints like security, performance, governance, and reliability. Since 2023 he has been an active contributor to Microsoft's agentic AI frameworks—Semantic Kernel, AutoGen, and now Microsoft Agent Framework (Contributor #29)—and created AgentEval, the .NET evaluation toolkit that brings validation discipline to AI agents and agentic workflows. He is a LinkedIn Learning Course Author with four released courses and around 60,000 learners, and speaks at conferences and user groups about building agentic AI in .NET: sharing real engineering lessons, practical patterns, and live demos to help teams build agents that are not just impressive, but measurably better.
 
-                            
-
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/).
+Check out his other courses on [LinkedIn Learning](https://www.linkedin.com/in/joslat/).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
