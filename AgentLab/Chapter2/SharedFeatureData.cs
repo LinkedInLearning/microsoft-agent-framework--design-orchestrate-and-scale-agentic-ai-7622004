@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Text.Json.Serialization;
 
-namespace Course.Chapter2;
+namespace AgentLab.Chapter2;
 
 // Shared data contracts for the Feature Design Team workflow
 // Data Flow: Input Idea → PM → Architect → QA → Feature Card
