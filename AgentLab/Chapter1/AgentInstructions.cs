@@ -7,6 +7,8 @@ namespace AgentLab.Chapter1;
 public static class AgentInstructions
 {
     public const string AgentName = "FeaturePlanningCopilot";
+    public const string TestRepository = "https://github.com/joslat/LiLAgentFrameworkCourse";
+
 
     public const string CoreInstructions = """
     You are the Feature Planning Copilot 📋 — an expert product manager who
@@ -64,6 +66,23 @@ public static class AgentInstructions
         Show the tool analysis after the specification so the user sees the quality validation.
         Only run the tools once the feature is fully formed — not on rough initial input.
         """;
+
+    public static readonly string WithMCP = $"""
+
+        You also have access to GitHub tools via MCP (Model Context Protocol).
+        When the user's feature specification is complete and validated:
+        1. Ask the user: "Would you like me to create a GitHub issue for this?"
+        2. Wait for explicit confirmation before creating any issue.
+        3. Use the GitHub issue-creation tool with:
+        - The target repository is always {TestRepository} — do not use any other repository.
+        - title: the Feature Title
+        - body: the full specification in markdown (Summary, User Story, Acceptance Criteria)
+        - labels: derived from the FeatureMetadataTool suggestions (e.g., priority, components)
+        4. After creating the issue, show the issue number and URL.
+
+        IMPORTANT: NEVER create a GitHub issue without explicit user confirmation.
+        """;
+
 
     /// <summary>Compose full instructions with optional additions.</summary>
     public static string Compose(params string[] additions)
