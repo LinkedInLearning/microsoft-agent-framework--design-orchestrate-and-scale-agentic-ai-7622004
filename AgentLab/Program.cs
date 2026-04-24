@@ -1,5 +1,5 @@
 using AgentLab.Chapter1;   // uncommented in 01_02
-// using AgentLab.Chapter2;   // uncommented in 02_03
+using AgentLab.Chapter2;   // uncommented in 02_03
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
@@ -19,9 +19,9 @@ while (true)
     Console.WriteLine("  3. Sample 03 - Feature Planning with Tools");
     Console.WriteLine("  4. Sample 04 - Feature Planning with MCP (GitHub)");
     Console.WriteLine();
-    //Console.WriteLine("  Chapter 2: Feature Design Team (Workflows)");
-    //Console.WriteLine("  ─────────────────────────────────────────────");
-    //Console.WriteLine("  5. Sample 03 - Feature Design Team (Mock Skeleton)");
+    Console.WriteLine("  Chapter 2: Feature Design Team (Workflows)");
+    Console.WriteLine("  ─────────────────────────────────────────────");
+    Console.WriteLine("  5. Sample 03 - Feature Design Team (Mock Skeleton)");
     //Console.WriteLine("  6. Sample 04-07 - Feature Design Team (Full AI Workflow)");
     //Console.WriteLine();
     Console.WriteLine("  q. Quit");
@@ -57,9 +57,9 @@ while (true)
             case "4":
                await FeaturePlanningWithMCP.RunAsync();
                break;
-            //case "5":
-            //    await FeatureWorkflow.ExecuteAsync(isMock: true);
-            //    break;
+            case "5":
+               await FeatureWorkflow.ExecuteAsync(isMock: true);
+               break;
             //case "6":
             //    await FeatureWorkflow.ExecuteAsync(isMock: false);
             //    break;
