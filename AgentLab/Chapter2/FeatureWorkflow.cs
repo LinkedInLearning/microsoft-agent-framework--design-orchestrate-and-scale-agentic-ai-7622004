@@ -13,18 +13,16 @@ public static class FeatureWorkflow
     // Runs the workflow: isMock=true for mock executors, false for real AI agents
     public static async Task ExecuteAsync(bool isMock = false)
     {
+        var chatClient = isMock ? null : CreateChatClient();
+
         Executor productManagerExecutor = isMock
             ? new FeatureDesignTeam.ProductManagerMockExecutor()
-            : null!;
-        Executor architectExecutor = isMock
-            ? new FeatureDesignTeam.ArchitectMockExecutor()
-            : null!;
-        Executor qaEngineerExecutor = isMock
-            ? new FeatureDesignTeam.QAEngineerMockExecutor()
-            : null!;
-        Executor featureCardExecutor = isMock
-            ? new FeatureDesignTeam.FeatureCardMockExecutor()
-            : null!;
+            : new ProductManagerAgent.ProductManagerExecutor(ProductManagerAgent.CreateAgent(chatClient!));
+
+        // Placeholder mocks — will be replaced with real executors in upcoming videos
+        Executor architectExecutor = new FeatureDesignTeam.ArchitectMockExecutor();
+        Executor qaEngineerExecutor = new FeatureDesignTeam.QAEngineerMockExecutor();
+        Executor featureCardExecutor = new FeatureDesignTeam.FeatureCardMockExecutor();
 
         // ── Build & run the workflow ──
         var workflow = new WorkflowBuilder(productManagerExecutor)

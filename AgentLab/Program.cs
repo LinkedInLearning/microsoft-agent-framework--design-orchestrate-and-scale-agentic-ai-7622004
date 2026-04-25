@@ -22,8 +22,8 @@ while (true)
     Console.WriteLine("  Chapter 2: Feature Design Team (Workflows)");
     Console.WriteLine("  ─────────────────────────────────────────────");
     Console.WriteLine("  5. Sample 03 - Feature Design Team (Mock Skeleton)");
-    //Console.WriteLine("  6. Sample 04-07 - Feature Design Team (Full AI Workflow)");
-    //Console.WriteLine();
+    Console.WriteLine("  6. Sample 04-07 - Feature Design Team (Full AI Workflow)");
+    Console.WriteLine();
     Console.WriteLine("  q. Quit");
     Console.WriteLine();
     Console.Write("Enter your choice: ");
@@ -60,9 +60,9 @@ while (true)
             case "5":
                await FeatureWorkflow.ExecuteAsync(isMock: true);
                break;
-            //case "6":
-            //    await FeatureWorkflow.ExecuteAsync(isMock: false);
-            //    break;
+            case "6":
+               await FeatureWorkflow.ExecuteAsync(isMock: false);
+               break;
             default:
                 Console.WriteLine("❌ Invalid choice. Please try again.");
                 break;
