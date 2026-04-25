@@ -27,8 +27,9 @@ public static class FeatureWorkflow
             ? new FeatureDesignTeam.QAEngineerMockExecutor()
             : new QAEngineerAgent.QAEngineerExecutor(QAEngineerAgent.CreateAgent(chatClient!));
 
-        // Placeholder mocks — will be replaced with real executors in upcoming videos
-        Executor featureCardExecutor = new FeatureDesignTeam.FeatureCardMockExecutor();
+        Executor featureCardExecutor = isMock
+            ? new FeatureDesignTeam.FeatureCardMockExecutor()
+            : new FeatureCardAgent.FeatureCardExecutor(FeatureCardAgent.CreateAgent(chatClient!));
 
         // ── Build & run the workflow ──
         var workflow = new WorkflowBuilder(productManagerExecutor)
