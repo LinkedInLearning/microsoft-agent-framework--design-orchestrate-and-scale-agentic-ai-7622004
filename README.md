@@ -6,6 +6,18 @@ This is the repository for the LinkedIn Learning course `Microsoft Agent Framewo
 ## Course Description
 
 _See the readme file in the main branch for updated instructions and information._
+
+Build production-grade agents with the Microsoft Agent Framework — the evolution of Semantic Kernel and AutoGen, redesigned for real agentic systems. Start by building a foundational "feature design" agent that turns rough product ideas into structured specifications, using DevUI from day one to visually trace exactly what your agent is doing. Then, give it memory and local functions and connect it to the GitHub MCP server for real-world capability. From there, orchestrate a full feature-design team — planner, architect, QA, and executor — collaborating through a structured, more deterministic multi-agent workflow.
+
+This course is for developers ready to move past single-prompt demos and build agents that actually behave in production. By the end, you'll be able to design, build, debug, and orchestrate complete multi-agent pipelines that automate real work — measurable, not magical.
+
+## Learning objectives
+- Build a foundational agent from scratch and progressively enhance it with memory and tools.
+- Visualize, monitor, and debug agents using DevUI.
+- Integrate local functions and MCP-based tools, including the GitHub MCP server, into a cohesive agent.
+- Design and orchestrate a multi-agent feature-design team — planner, architect, QA, and executor — through a structured, more deterministic workflow.
+- Apply a reliability mindset to verify your agents behave before they reach production.
+
 ## Instructions
 
 This repository contains branches for the videos in this course that involve writing code — not every video has a branch, only the ones where you are actively building something.
@@ -71,6 +83,6 @@ Check out his other courses on [LinkedIn Learning](https://www.linkedin.com/in/j
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-course-url]: https://www.linkedin.com/learning/microsoft-agent-framework-design-orchestrate-and-scale-agentic-ai
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D560DAQFxVqZFKC1QEg/learning-public-crop_675_1200/B56Z2OTUACGgAY-/0/1776208920857?e=2147483647&v=beta&t=oZtFudx_UDJGfEucjDB_cK-AnwkLGnEEC-0UdN8K3U0
 
